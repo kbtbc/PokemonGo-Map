@@ -29,8 +29,7 @@ check_result_max = 6  # Should be equal to maximal return code!
 # Simple function to do a call to Niantic's system for testing proxy connectivity
 def check_proxy(proxy_queue, timeout, proxies, show_warnings, check_results):
 
-    # Update check url - Thanks ChipWolf #1282 and #1281
-    proxy_test_url = 'https://pgorelease.nianticlabs.com/plfe/rpc'
+    proxy_test_url = 'https://sso.pokemon.com/sso/login'
     proxy = proxy_queue.get()
 
     check_result = check_result_ok
